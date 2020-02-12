@@ -89,6 +89,7 @@ export interface ISelectProps {
   dropdownMenuStyle: React.CSSProperties;
   notFoundContent: string | false;
   tabIndex: string | number;
+  placement: string;
 }
 
 function propsValueType(...args: [ISelectProps, string, string, any, any]) {
@@ -172,6 +173,7 @@ const SelectPropTypes = {
   removeIcon: PropTypes.node,
   menuItemSelectedIcon: PropTypes.oneOfType([PropTypes.func, PropTypes.node]),
   dropdownRender: PropTypes.func,
+  placement: PropTypes.string,
 };
 
 export default SelectPropTypes;

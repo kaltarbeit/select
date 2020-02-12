@@ -59,6 +59,7 @@ export interface ISelectTriggerProps extends IDropdownMenuProps {
   value: valueType;
   transitionName: string;
   animation: string;
+  placement: string;
 }
 export interface ISelectTriggerState {
   dropdownWidth: number;
@@ -235,7 +236,7 @@ export default class SelectTrigger extends React.Component<
         showAction={disabled ? [] : this.props.showAction}
         hideAction={hideAction}
         ref={this.saveTriggerRef}
-        popupPlacement="bottomLeft"
+        popupPlacement={placement || 'bottomLeft'}
         builtinPlacements={BUILT_IN_PLACEMENTS}
         prefixCls={dropdownPrefixCls}
         popupTransitionName={this.getDropdownTransitionName()}
