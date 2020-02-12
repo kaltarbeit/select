@@ -1614,6 +1614,7 @@ class Select extends React.Component<Partial<ISelectProps>, ISelectState> {
         menuItemSelectedIcon={props.menuItemSelectedIcon}
         dropdownRender={props.dropdownRender}
         ariaId={ariaId}
+        placement={props.placement}
       >
         <div
           id={props.id}
