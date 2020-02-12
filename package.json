@@ -1,6 +1,6 @@
 {
-  "name": "rc-select",
-  "version": "10.0.0-ksd.2",
+  "name": "@kaltarbeit/rc-select",
+  "version": "10.0.0-ksd.1",
   "description": "React Select",
   "engines": {
     "node": ">=8.x"
