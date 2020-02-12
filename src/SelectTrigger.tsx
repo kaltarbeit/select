@@ -202,6 +202,7 @@ export default class SelectTrigger extends React.Component<
       showSearch,
       dropdownClassName,
       dropdownStyle,
+      placement,
       dropdownMatchSelectWidth,
     } = props;
     const dropdownPrefixCls = this.getDropdownPrefixCls();
