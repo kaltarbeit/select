@@ -44,6 +44,8 @@ export interface SelectTriggerProps {
   dropdownAlign: object;
   empty: boolean;
 
+  placement: string;
+
   getTriggerDOMNode: () => HTMLElement;
 }
 
@@ -67,6 +69,7 @@ const SelectTrigger: React.RefForwardingComponent<
     dropdownAlign,
     getPopupContainer,
     empty,
+    placement,
     getTriggerDOMNode,
     ...restProps
   } = props;
@@ -95,7 +98,7 @@ const SelectTrigger: React.RefForwardingComponent<
       {...restProps}
       showAction={[]}
       hideAction={[]}
-      popupPlacement="bottomLeft"
+      popupPlacement={placement || 'bottomLeft'}
       builtinPlacements={BUILT_IN_PLACEMENTS}
       prefixCls={dropdownPrefixCls}
       popupTransitionName={mergedTransitionName}

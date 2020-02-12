@@ -112,6 +112,7 @@ export interface SelectProps<OptionsType extends object[], ValueType>
   animation?: string;
   transitionName?: string;
   getPopupContainer?: RenderDOMFunc;
+  placement: string;
 
   // Others
   disabled?: boolean;
@@ -306,6 +307,7 @@ export default function generateSelector<
       dropdownRender,
       dropdownAlign,
       showAction = [],
+      placement,
 
       // Tags
       tokenSeparators,
@@ -1039,6 +1041,7 @@ export default function generateSelector<
           dropdownMatchSelectWidth={dropdownMatchSelectWidth}
           dropdownRender={dropdownRender}
           dropdownAlign={dropdownAlign}
+          placement={placement}
           getPopupContainer={getPopupContainer}
           empty={!mergedOptions.length}
           getTriggerDOMNode={() => selectorDomRef.current}
