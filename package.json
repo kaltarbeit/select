@@ -91,6 +91,6 @@
     ]
   },
   "publishConfig": {
-    "registry": "https://npm.pkg.github.com/kaltarbeit"
+    "registry": "https://npm.pkg.github.com/@kaltarbeit"
   }
 }
