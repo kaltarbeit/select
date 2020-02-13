@@ -1,5 +1,5 @@
 {
-  "name": "@kaltarbeit/rc-select",
+  "name": "rc-select",
   "version": "9.2.3-ksd.2",
   "description": "React Select",
   "keywords": [
@@ -91,6 +91,7 @@
     ]
   },
   "publishConfig": {
-    "registry": "https://npm.pkg.github.com/"
+    "registry": "https://npm.pkg.github.com",
+    "scope": "@kaltarbeit"
   }
 }
