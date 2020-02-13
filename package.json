@@ -1,6 +1,6 @@
 {
-  "name": "@kaltarbeit/rc-select",
-  "version": "9.2.3-ksd.2",
+  "name": "rc-select",
+  "version": "9.2.3-ksd.3",
   "description": "React Select",
   "keywords": [
     "react",
@@ -91,6 +91,6 @@
     ]
   },
   "publishConfig": {
-    "registry": "https://npm.pkg.github.com/"
+    "registry": "https://npm.pkg.github.com/kaltarbeit"
   }
 }
